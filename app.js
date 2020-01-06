@@ -17,3 +17,18 @@ for (let i = 0; i <= 10; i++) {
 	let sevenTimesTable = '7 * ' + i + ' = ' + i * 7;
 	console.log(sevenTimesTable);
 }
+
+console.log("==============Challenge 4=================");
+
+function timesTableCreator(num) {
+	for (let i = 1; i <= 10; i++) {
+		let timesTable = num + " * " + i + " = " + i * num;
+		console.log(timesTable);
+	}
+};
+
+for (let j = 1; j <= 10; j++) {
+	console.log(`==== ${j} Times Table ====`)
+	
+	timesTableCreator(j);
+};
