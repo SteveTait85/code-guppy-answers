@@ -11,3 +11,9 @@ for (let i = 1; i <= 100; i += 2) {
 
 }
 console.log("==============Challenge 3=================");
+
+for (let i = 0; i <= 10; i++) {
+
+	let sevenTimesTable = '7 * ' + i + ' = ' + i * 7;
+	console.log(sevenTimesTable);
+}
