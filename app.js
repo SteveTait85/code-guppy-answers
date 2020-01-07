@@ -69,3 +69,20 @@ for (let i = 11; i <= 30; i += 2) {
 	sum1 += i;
 }
 console.log(sum1);
+
+console.log("==============Challenge 8=================");
+// Coding challenge #8: Create a function that will convert from Celsius to Fahrenheit
+
+let celcius = 0
+
+function celciusToFahrenheit(celcius) {
+	return (celcius * 9 / 5) + 32;
+}
+
+console.log("==============Challenge 9=================");
+// Coding challenge #9: Create a function that will convert from Fahrenheit to Celsius
+
+
+function fahrenheitToCelcius(fahrenheit) {
+	return (fahrenheit - 32) * 5 / 9;
+}
