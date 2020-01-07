@@ -86,3 +86,15 @@ console.log("==============Challenge 9=================");
 function fahrenheitToCelcius(fahrenheit) {
 	return (fahrenheit - 32) * 5 / 9;
 }
+
+console.log("==============Challenge 10=================");
+
+// Coding challenge #10: Calculate the sum of numbers in an array of numbers
+let sum3 = 0
+
+function sumOfArray(arr) {
+	for (i of arr) {
+		sum3 += i;
+	};
+	return sum3
+}
