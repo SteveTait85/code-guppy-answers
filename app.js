@@ -22,7 +22,7 @@ console.log("==============Challenge 4=================");
 
 function timesTableCreator(num) {
 	for (let i = 1; i <= 10; i++) {
-		let timesTable = `${num} * ${i} =  ${ num * i}`;
+		let timesTable = `${num} * ${i} = ${ num * i}`;
 		console.log(timesTable);
 	}
 };
@@ -32,3 +32,28 @@ for (let j = 1; j <= 10; j++) {
 
 	timesTableCreator(j);
 };
+
+console.log("==============Challenge 5=================");
+
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+	sum += i;
+}
+console.log(sum);
+
+console.log("==============Challenge 6=================");
+// I do not understand what is asked of me with:
+//Coding challenge #6: Calculate 10! :/ 
+
+function factorial(num) {
+	if (num === 0) {
+		return 1;
+	} else {
+		return num * factorial(num - 1);
+	}
+};
+
+console.log(factorial(10));
+
+console.log("==============Challenge 7=================");
