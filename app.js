@@ -110,3 +110,18 @@ function averageOfArray(arr) {
 	};
 	return sum4 / arr.length;
 }
+
+console.log("==============Challenge 12=================");
+// Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
+
+let positives = []
+
+function positivesOfArray(arr) {
+	for (i of arr) {
+		if (i >= 0) {
+			positives.push(i);
+		}
+	}
+	return positives;
+}
+
