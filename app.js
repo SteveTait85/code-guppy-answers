@@ -73,7 +73,6 @@ console.log(sum1);
 console.log("==============Challenge 8=================");
 // Coding challenge #8: Create a function that will convert from Celsius to Fahrenheit
 
-let celcius = 0
 
 function celciusToFahrenheit(celcius) {
 	return (celcius * 9 / 5) + 32;
@@ -90,33 +89,35 @@ function fahrenheitToCelcius(fahrenheit) {
 console.log("==============Challenge 10=================");
 
 // Coding challenge #10: Calculate the sum of numbers in an array of numbers
-let sum3 = 0
 
 function sumOfArray(arr) {
+	let sum = 0
 	for (i of arr) {
-		sum3 += i;
+		sum += i;
 	};
-	return sum3
+	return sum
 }
 console.log("==============Challenge 11=================");
 
 // Coding challenge #11: Calculate the average of the numbers in an array of numbers
 
-let sum4 = 0
 
 function averageOfArray(arr) {
+	let sum = 0
+
 	for (i of arr) {
-		sum4 += i;
+		sum += i;
 	};
-	return sum4 / arr.length;
+	return sum / arr.length;
 }
 
 console.log("==============Challenge 12=================");
 // Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
-let positives = []
 
 function positivesOfArray(arr) {
+	let positives = []
+
 	for (i of arr) {
 		if (i >= 0) {
 			positives.push(i);
@@ -125,3 +126,4 @@ function positivesOfArray(arr) {
 	return positives;
 }
 
+console.log("==============Challenge 13=================");
