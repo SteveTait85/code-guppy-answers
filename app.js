@@ -98,3 +98,15 @@ function sumOfArray(arr) {
 	};
 	return sum3
 }
+console.log("==============Challenge 11=================");
+
+// Coding challenge #11: Calculate the average of the numbers in an array of numbers
+
+let sum4 = 0
+
+function averageOfArray(arr) {
+	for (i of arr) {
+		sum4 += i;
+	};
+	return sum4 / arr.length;
+}
