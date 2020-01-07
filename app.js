@@ -70,7 +70,6 @@ for (let i = 11; i <= 30; i += 2) {
 }
 console.log(sum1);
 
-console.log("==============Challenge 8=================");
 // Coding challenge #8: Create a function that will convert from Celsius to Fahrenheit
 
 
@@ -78,7 +77,6 @@ function celciusToFahrenheit(celcius) {
 	return (celcius * 9 / 5) + 32;
 }
 
-console.log("==============Challenge 9=================");
 // Coding challenge #9: Create a function that will convert from Fahrenheit to Celsius
 
 
@@ -86,7 +84,6 @@ function fahrenheitToCelcius(fahrenheit) {
 	return (fahrenheit - 32) * 5 / 9;
 }
 
-console.log("==============Challenge 10=================");
 
 // Coding challenge #10: Calculate the sum of numbers in an array of numbers
 
@@ -97,7 +94,6 @@ function sumOfArray(arr) {
 	};
 	return sum
 }
-console.log("==============Challenge 11=================");
 
 // Coding challenge #11: Calculate the average of the numbers in an array of numbers
 
@@ -110,8 +106,6 @@ function averageOfArray(arr) {
 	};
 	return sum / arr.length;
 }
-
-console.log("==============Challenge 12=================");
 // Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
 
@@ -126,4 +120,14 @@ function positivesOfArray(arr) {
 	return positives;
 }
 
-console.log("==============Challenge 13=================");
+// Coding challenge #13: Find the maximum number in an array of numbers
+
+function findMaxNumber(arr) {
+	let maxNum = arr[0];
+	for (i of arr) {
+		if (arr[i] > maxNum) {
+			maxNum = arr[i];
+		}
+	}
+	return maxNum;
+}
