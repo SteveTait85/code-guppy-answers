@@ -10,13 +10,11 @@ for (let i = 1; i <= 10; i++) {
 
 for (let i = 1; i <= 100; i += 2) {
 	console.log(i);
-
 }
 // console.log("==============Challenge 3=================");
 // // Coding challenge #3: Print the multiplication table with 7
 
 for (let i = 1; i <= 10; i++) {
-
 	let sevenTimesTable = `7 * ${i} =  ${i * 7}`;
 	console.log(sevenTimesTable);
 }
@@ -27,16 +25,16 @@ for (let i = 1; i <= 10; i++) {
 
 function timesTableCreator(num) {
 	for (let i = 1; i <= 10; i++) {
-		let timesTable = `${num} * ${i} = ${ num * i}`;
+		let timesTable = `${num} * ${i} = ${num * i}`;
 		console.log(timesTable);
 	}
-};
+}
 
 for (let j = 1; j <= 10; j++) {
-	console.log(`==== ${j} Times Table ====`)
+	console.log(`==== ${j} Times Table ====`);
 
 	timesTableCreator(j);
-};
+}
 
 // console.log("==============Challenge 5=================");
 // // Coding challenge #5: Calculate the sum of numbers from 1 to 10
@@ -50,7 +48,7 @@ console.log(sum);
 
 // console.log("==============Challenge 6=================");
 // // I do not understand what is asked of me with:
-// //Coding challenge #6: Calculate 10! :/ 
+// //Coding challenge #6: Calculate 10! :/
 
 function factorial(num) {
 	if (num === 0) {
@@ -58,13 +56,13 @@ function factorial(num) {
 	} else {
 		return num * factorial(num - 1);
 	}
-};
+}
 
 console.log(factorial(10));
 
 // console.log("==============Challenge 7=================");
 // // Coding challenge #7: Calculate the sum of odd numbers greater than 10 and less than 30
-let sum1 = 0
+let sum1 = 0;
 for (let i = 11; i <= 30; i += 2) {
 	sum1 += i;
 }
@@ -72,49 +70,44 @@ console.log(sum1);
 
 // // Coding challenge #8: Create a function that will convert from Celsius to Fahrenheit
 
-
-function celciusToFahrenheit(celcius) {
-	return (celcius * 9 / 5) + 32;
+function celciusToFahrenheit(celcius = 0) {
+	return celcius * 9 / 5 + 32;
 }
 
 // // Coding challenge #9: Create a function that will convert from Fahrenheit to Celsius
 
-
-function fahrenheitToCelcius(fahrenheit) {
+function fahrenheitToCelcius(fahrenheit = 0) {
 	return (fahrenheit - 32) * 5 / 9;
 }
-
 
 // // Coding challenge #10: Calculate the sum of numbers in an array of numbers
 
 function sumOfArray(arr) {
-	let sum = 0
-	for (i of arr) {
-		sum += i;
-	};
-	return sum
+	let sum = 0;
+	for (val of arr) {
+		sum += val;
+	}
+	return sum;
 }
 
 // // Coding challenge #11: Calculate the average of the numbers in an array of numbers
 
-
 function averageOfArray(arr) {
-	let sum = 0
+	let sum = 0;
 
-	for (i of arr) {
-		sum += i;
-	};
+	for (val of arr) {
+		sum += val;
+	}
 	return sum / arr.length;
 }
 // // Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
-
 function positivesOfArray(arr) {
-	let positives = []
+	let positives = [];
 
-	for (i of arr) {
-		if (i >= 0) {
-			positives.push(i);
+	for (val of arr) {
+		if (val >= 0) {
+			positives.push(val);
 		}
 	}
 	return positives;
@@ -122,23 +115,23 @@ function positivesOfArray(arr) {
 
 // // Coding challenge #13: Find the maximum number in an array of numbers
 
-function findMaxNumber(arr) {
+function findMaxNumber(arr = [0]) {
 	let maxNum = arr[0];
-	for (i of arr) {
-		if (arr[i] > maxNum) {
-			maxNum = arr[i];
+	for (val of arr) {
+		if (arr[val] > maxNum) {
+			maxNum = arr[val];
 		}
 	}
 	return maxNum;
 }
 
 // Coding challenge #14: Print the first 10 Fibonacci numbers without recursion
-function fibonacci(positions) {
+function fibonacci(sequences) {
 	let result = [0, 1];
 	let fib1 = 0;
 	let fib2 = 1;
 
-	for (let i = 2; i < positions; i++) {
+	for (let i = 2; i < sequences; i++) {
 		let fibNum = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = fibNum;
@@ -147,23 +140,33 @@ function fibonacci(positions) {
 	return result;
 }
 
-console.log(fibonacci(10));
+// console.log(fibonacci(10));
 
 // Coding challenge 14B: Print the first n Fibonacci numbers with recursion
-// function fibLoopRecurison(num) {
-
-// 	let result = [];
-// 	for (let i = 0; i < num; i++) {
-// 		result.push(fibRecursive(num[i]));
-// 	}
-// 	return result;
-// }
+//
+function fibLoopRecursion(num) {
+	for (let i = 1; i < num; i++) {
+		console.log('error 404 solution not found');
+	}
+}
 
 // Coding challenge #15: Create a function that will find the nth Fibonacci number using recursion
 
 function fibRecursive(num) {
 	if (num < 2) {
-		return num
+		return num;
 	}
 	return fibRecursive(num - 1) + fibRecursive(num - 2);
 }
+
+// Coding challenge #16: Create a function that will return a Boolean specifying if a number is prime
+
+function isPrime(num) {
+	for (var i = 2; i < num; i++)
+		if (num % i === 0) {
+			return false;
+		}
+	return num > 1;
+}
+
+
