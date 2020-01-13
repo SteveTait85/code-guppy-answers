@@ -178,3 +178,15 @@ function sumOfDigits(number) {
 	}
 	return sum;
 }
+
+// Coding challenge #18: Print the first 100 prime numbers
+
+function printPrimes(num) {
+
+	for (let i = 1; i < num; i++) {
+		if (isPrime(i)) {
+			console.log(i);
+		}
+	}
+}
+
