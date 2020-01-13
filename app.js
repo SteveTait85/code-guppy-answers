@@ -169,4 +169,12 @@ function isPrime(num) {
 	return num > 1;
 }
 
+// Coding challenge #17: Calculate the sum of digits of a positive integer number
 
+function sumOfDigits(number) {
+	let sum = 0;
+	for (num of number.toString()) {
+		sum += parseInt(num);
+	}
+	return sum;
+}
