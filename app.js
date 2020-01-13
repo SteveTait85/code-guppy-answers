@@ -190,3 +190,20 @@ function printPrimes(num) {
 	}
 }
 
+// Coding challenge #19: Create a function that will return in an array the first "nPrimes" prime numbers greater than a particular number "startAt"
+
+function getPrimesArray(nPrimes, startAt) {
+	let primesArray = [];
+	let startindex = startAt
+
+	while (primesArray.length < nPrimes) {
+		if (isPrime(startindex)) {
+			primesArray.push(startindex);
+		}
+		startindex++
+	}
+	return primesArray;
+
+}
+
+
