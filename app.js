@@ -243,3 +243,11 @@ function reverseString(str) {
 }
 
 console.log(reverseString("Hi My Name Is Steve Tait And I Like To Write In Title Case"));
+
+// Coding challenge #24: Create a function that will merge two arrays and return the result as a new array
+
+function mergeTwoArrays(arr1, arr2) {
+	const mergedArray = [...arr1, ...arr2];
+
+	return mergedArray;
+}
