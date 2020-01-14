@@ -214,3 +214,12 @@ function rotateLeft(arr) {
 	return rotatedArray;
 }
 
+// Coding challenge #21: Rotate an array to the right 1 position
+
+
+function rotateRight(arr) {
+	const rotatedArray = [...arr];
+	const fromTheBack = rotatedArray.pop();
+	rotatedArray.unshift(fromTheBack);
+	return rotatedArray;
+}
