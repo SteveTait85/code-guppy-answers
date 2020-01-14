@@ -82,7 +82,7 @@ function fahrenheitToCelcius(fahrenheit = 0) {
 
 // // Coding challenge #10: Calculate the sum of numbers in an array of numbers
 
-function sumOfArray(arr) {
+function sumOfArray(arr = 0) {
 	let sum = 0;
 	for (val of arr) {
 		sum += val;
@@ -128,14 +128,14 @@ function findMaxNumber(arr = [0]) {
 // Coding challenge #14: Print the first 10 Fibonacci numbers without recursion
 function fibonacci(sequences) {
 	let result = [0, 1];
-	let fib1 = 0;
-	let fib2 = 1;
+	let antepenultimateNumber = 0;
+	let penultimateNumber = 1;
 
 	for (let i = 2; i < sequences; i++) {
-		let fibNum = fib1 + fib2;
-		fib1 = fib2;
-		fib2 = fibNum;
-		result.push(fibNum);
+		const currentNumber = antepenultimateNumber + penultimateNumber
+		antepenultimateNumber = penultimateNumber;
+		penultimateNumber = currentNumber;
+		result.push(currentNumber);
 	}
 	return result;
 }
@@ -194,7 +194,7 @@ function printPrimes(num) {
 
 function getPrimesArray(nPrimes, startAt) {
 	let primesArray = [];
-	let startindex = startAt
+	let startindex = startAt;
 
 	while (primesArray.length < nPrimes) {
 		if (isPrime(startindex)) {
@@ -203,7 +203,14 @@ function getPrimesArray(nPrimes, startAt) {
 		startindex++
 	}
 	return primesArray;
-
 }
 
+// Coding challenge #20: Rotate an array to the left 1 position
+
+function rotateLeft(arr) {
+	const rotatedArray = [...arr];
+	const fromTheFront = rotatedArray.shift();
+	rotatedArray.push(fromTheFront);
+	return rotatedArray;
+}
 
