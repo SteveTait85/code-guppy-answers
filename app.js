@@ -223,3 +223,23 @@ function rotateRight(arr) {
 	rotatedArray.unshift(fromTheBack);
 	return rotatedArray;
 }
+
+// Coding challenge #22: Reverse an array
+
+function reverseArray(arr) {
+	arr.reverse();
+	return arr;
+}
+
+// Coding challenge #23: Reverse a string
+
+function reverseString(str) {
+
+	splitString = str.split("");
+	reversedArray = splitString.reverse();
+	joinedArray = reversedArray.join("");
+
+	return joinedArray;
+}
+
+console.log(reverseString("Hi My Name Is Steve Tait And I Like To Write In Title Case"));
